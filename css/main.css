@@ -1,0 +1,627 @@
+/*************** general styling rules ***********/
+
+* {
+    box-sizing:content-box;
+    margin:0;
+    padding:0;
+}
+
+a:focus {
+    outline: none;
+}
+
+label,p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.padding {
+    padding:1rem;
+}
+
+.align-middle {
+    justify-content: center;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.fa, .fas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline:none;
+}
+
+h5 {
+    font-weight:500;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*************** emergency message ****************/
+
+#emergencyMessageBar {
+    background-color: #5b6770;
+    color:white;
+    
+}
+
+.emergency-alert {
+    font-size:1.5rem;
+    font-weight:500;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
+}
+
+.emergency-alert p {
+    margin-bottom: 0;
+    margin-left:0.5rem;
+}
+
+.learn-more:hover, .learn-more:focus {
+    background-color: white;
+    color:#5b6770;
+}
+
+.emergency-message {
+    padding-top: 1rem;
+}
+
+.emergency-message button {
+    border: 1px solid white;
+    color:white;
+    padding:0.5rem 1rem;
+}
+
+.close-btn {
+    text-align: right;
+}
+
+.close-btn i {
+    color:white;
+}
+
+.close-btn i:hover, .close-btn i:focus{
+    cursor: pointer;
+    color:#e75d2a;
+}
+
+
+
+/*************** header ****************/
+.nav-bar {
+    background:#e7ebef;
+    font-weight:500;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-bar a {
+    color:#011c35;
+}
+
+.nav-bar.desktop-nav ul {
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    position:relative;
+    /* margin-right: 1rem;
+    margin-left: 1rem; */
+    /* font-weight: 500; */
+}
+
+.nav-bar ul li a:hover, .nav-bar ul li a:focus{
+    cursor: pointer;
+    color: #e75d2a;
+}
+
+.nav-bar ul li.active>a{
+    color: #e75d2a;
+}
+
+.mobile-nav .fa-times {
+    display:none;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    margin-left:0;
+}
+
+.ham-menu {
+    display:flex;
+    justify-content: flex-start;
+    background-color: #003c71;
+    color:white;
+    font-weight: 500;
+    /* padding-top:1rem;
+    padding-bottom: 1rem; */
+}
+
+.ham-menu i {
+    margin-right:10px;
+}
+
+.mobile-dropdown {
+    display:none;
+    margin-top:1rem;
+}
+
+.mobile-dropdown li {
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+}
+
+
+.desktop-nav {
+    display:none;
+    position:relative
+}
+
+.mobile-nav {
+    display:block;
+    overflow: hidden;
+}
+
+/*************** header dropdown ***************/
+.desktop-nav ul li {
+    position:relative;
+}
+
+.dropdown-content {
+    display:none;
+    position: absolute;
+    left:0;
+    background:white;
+    top:3.5rem;
+    z-index:100002;
+    display:none;
+}
+
+.dropdown-content.future-students {
+    /* display:flex; */
+    /* justify-content: space-around; */
+    z-index: 1002;
+    padding-top:1rem;
+    padding-bottom: 2rem;
+    top:2.5rem;
+    /* box-shadow: 0 0 20px rgba(71, 70, 70, 0.6); */
+
+}
+
+.dropdown-content.future-students a {
+    margin-top:0.3rem;
+    margin-bottom:0.3rem;
+}
+
+.dropdown-content.future-students div {
+    border-right:1px solid #e7ebef;
+    box-sizing: border-box;
+}
+
+.dropdown-content.future-students div:last-of-type {
+    border:none;
+}
+
+.desktop-nav ul li .dropdown-content{
+    position: absolute;
+    left:0;
+    background:white;
+    width:300px;
+    display:none;
+}
+
+.dropdown-content a {
+    padding-top:0.3rem;
+    padding-bottom: 0.3rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight:500;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.dropdown-content a:hover, .dropdown-content a:focus{
+    cursor: pointer;
+    color: #e75d2a;
+}
+
+
+
+/*************** feature image ****************/
+.feature-img {
+    /* max-height:400px; */
+    overflow: hidden;
+    position:relative
+}
+
+figure {
+    position:relative;
+}
+figure a {
+    color:WHITE;
+}
+
+figure a:hover, figure a:focus {
+    color:#e75d2a;
+}
+
+figcaption {
+    font-size:2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    color:white;
+    top:5%;
+    left:0;
+    width:100%;
+}
+
+.breadcrumb {
+    list-style: none;
+    margin-left:0;
+    display:flex;
+    align-items: center;
+    font-size:1rem;
+    margin-bottom: 0;
+}
+
+/*************** program finder ****************/
+
+
+
+#searchProgramForm {
+    background-color: #e75d2a;
+    padding:2rem 6rem;
+    color:white;
+}
+
+.program-search {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.search-input div {
+    display:flex;
+    align-items: center;
+}
+
+#inputContent::placeholder {
+    color:#67768b;
+}
+
+#inputContent {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding:1rem;
+    background-color: #e7ebef;
+    height:46px;
+    border:2px solid #e7ebef;
+
+}
+
+#inputContent:focus {
+    box-shadow: 0 0 10px rgba(250,250,250,0.6);
+    border:2px solid #005aa8;
+}
+
+
+.search-btn {
+    background-color: #005aa8;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height:46px;
+    padding:0 1rem;
+    font-weight:500;
+    font-family: 'Ubuntu', sans-serif;
+}
+.search-btn:hover, .search-btn:focus  {
+    background-color: #011c35;
+    color:white;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance:none;
+}
+
+
+tbody td, tbody th {
+    padding:0;
+}
+
+.search-input input, .search-input button {
+    margin-bottom: 0;
+}
+
+.fas.remove {
+    display:none;
+}
+
+.fas.remove:before {
+    margin-left:-20px;
+    font-size:18px;
+    color:#011c35;
+}
+
+.fas.remove:hover, .search-btn:focus {
+    cursor: pointer;
+}
+
+/* .search-input
+.found>div{
+    overflow-y: auto; 
+} */
+
+tbody, tfoot, thead {
+    background:transparent;
+    border: none;
+}
+
+tbody tr:nth-child(even) {
+    background:transparent;
+}
+
+tr.program-list td {
+    position: relative;
+}
+
+/*************** program list found ***************/
+
+.found ul {
+    list-style: none;
+    max-height:20rem;
+    overflow-y: auto;
+    margin-left:0;
+    z-index: 10001;
+    position: absolute;
+    width: 100%;
+    display:none;
+    border:1px solid #9e9e9e;
+}
+
+.found ul li {
+    background-color:white;
+    padding:10px 1rem;
+    color:black;
+    /* border-bottom: 1px solid lightgray; */
+}
+
+/* #searchProgramForm tbody tr{
+    background-color: white;
+} */
+
+.found ul li:hover, .found ul li:focus {
+    cursor: pointer;
+    background-color: #C7C2C0;
+}
+
+/*************** search results ****************/
+.number-of-results {
+    border-bottom:1px solid #bcc3ca;
+    padding:1rem 0;
+    font-family: 'Ubuntu', sans-serif;
+    color:#3d4b44;
+}
+
+.number-of-results span {
+    font-weight: 700;
+}
+#resultWrapper article {
+    margin-top:30px;
+    margin-bottom:30px;
+    padding: 1rem;
+    border: 1px solid #eee;
+}
+
+#resultWrapper article ul li{
+    list-style: none;
+    color:#3d4b44;
+    margin-bottom:1rem;
+}
+
+#resultWrapper {
+    max-height:80vh;
+    overflow-y: auto;
+}
+
+#resultWrapper article ul li.program-title h5{
+    color:#005aa8;
+}
+
+#resultWrapper article ul li.program-title h5:hover, #resultWrapper article ul li.program-title h5:focus {
+    color:#2e3033;
+    text-decoration: underline;
+}
+
+/************* browse by type and faculty *****************/
+
+#typeFaculty {
+    padding-top:30px;
+    padding-bottom: 30px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#typeFaculty article {
+    padding-top:2rem;
+    padding-bottom:2rem;
+
+    background-color: #e7ebef;
+}
+
+#typeFaculty h5 {
+    padding:1rem;
+}
+
+#typeFaculty i {
+    font-size:3rem;
+    color:#011c35;
+}
+
+#typeFaculty ul li {
+    list-style: none;
+    text-align: center;
+}
+
+#typeFaculty ul li a {
+    color:#005aa8;
+}
+#typeFaculty ul li a:hover,#typeFaculty ul li a:focus {
+    color:#0A0A0A;
+    text-decoration: underline;
+}
+
+
+/* #searchByType {
+    border-right: 3px dashed black;
+    box-sizi
+} */
+
+
+/************* program filter *****************/
+#findProgramFilter {
+    background: #003c71;
+    /* background: linear-gradient(115deg, #0169ca 10%, #015cb1 30%, #014c92); */
+    padding-top:2rem;
+    padding-bottom:2rem;
+    color:white;
+}
+
+.btnWrapper button {
+    background-color: #dde1e3;
+    color:#505a62;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.btnWrapper button:hover, .btnWrapper button:focus {
+    background-color: #011c35;
+    color:white;
+}
+
+.selectWraper select {
+    border-radius: 5px;
+}
+
+.selectWraper select:focus {
+    /* box-shadow: 0 2px 10px rgba(250,250,250,0.6); */
+    border:2px solid #e75d2a;
+
+}
+
+.btnWrapper button:disabled,
+.btnWrapper button[disabled]{
+    
+    opacity:0.4;
+}
+
+/**************footer-links*******************/
+.footer-links {
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.footer-links ul {
+    list-style: none;
+    margin-left: 0;
+    
+}
+
+.footer-links ul li a{
+    color:#3d4b44;
+}
+
+.footer-links ul li a:hover, .footer-links ul li a:focus{
+    cursor: pointer;
+    color:#0A0A0A;
+    text-decoration:underline;
+}
+
+.footer-links h5 {
+    color:#005aa8;
+}
+
+.footer-links>div {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+/**************footer-bottom*******************/
+
+.footer-bottom {
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+.footer-bottom p {
+    color:#003c71;
+}
+ul.social-link {
+    list-style: none;
+    font-size:1.6rem;
+    margin-left:0;
+}
+
+ul.social-link a {
+    color:#003c71;
+}
+
+ul.social-link li {
+    text-align: center;
+}
+
+/********* for small viewport ***********/
+@media screen and (max-width: 40em) {
+    #programFinder {
+        padding-left:0;
+        padding-right:0;
+    }
+
+    #searchProgramForm {
+        padding:1rem 1rem;
+    }
+
+
+}
+
+/********* for mobile and desktop viewport ***********/
+
+@media screen and (min-width: 40em) {
+    #programFinder {
+        margin-top: -4rem;
+        z-index: 1001;
+        position: relative
+    }
+
+
+
+}
+
+/********* for desktop viewport only ***********/
+
+@media screen and (min-width: 64em) {
+    .mobile-nav {
+        display:none;
+        overflow: hidden;
+    }
+
+    .desktop-nav {
+        display:block;
+    }
+}
+
+
+
+
